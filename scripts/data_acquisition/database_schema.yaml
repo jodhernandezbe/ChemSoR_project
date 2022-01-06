@@ -1,0 +1,51 @@
+tables:
+  record:
+    columns:
+      - record_id
+      - reporting_year
+      - naics_code
+      - chemical_id
+      - source_reduction_activity_id
+      - reduction_id
+    id: record_id
+    grouping:
+        - reporting_year
+        - naics_code
+        - chemical_id
+        - source_reduction_activity_id
+        - reduction_id
+  source_reduction_activity:
+    columns:
+      - source_reduction_activity_id
+      - source_reduction_code
+      - source_reduction_description
+    id: source_reduction_activity_id
+    grouping:
+        - source_reduction_code
+        - source_reduction_description
+  reduction:
+    columns:
+      - reduction_id
+      - reduction_code
+      - description_code
+    id: reduction_id
+    grouping:
+        - reduction_code
+        - description_code
+  chemical:
+    columns:
+      - chemical_id
+      - tri_chemical_id
+      - chemical_name
+      - caac_ind
+      - carc_ind
+      - pfas_ind
+      - metal_ind
+    id: chemical_id
+    grouping:
+        - tri_chemical_id
+        - chemical_name
+        - caac_ind
+        - carc_ind
+        - pfas_ind
+        - metal_ind

@@ -1,0 +1,17 @@
+system:
+  TRI:
+    url: https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-plus-data-files-calendar-years-1987-present
+    queries:
+      options: //*[@id="dynamic_select_button"]/option/@value
+  SRS:
+    url: https://cdxnodengn.epa.gov/cdx-srs-rest
+    by_alternative_id: substance/alt_id/{altId}/alt_id_type/{altIdType}?qualifier=exact
+    by_name: substance/name/{substanceName}?excludeSynonyms=true
+    by_cas: substance/cas/{casNum}?qualifier=exact
+  NLM:
+    url: https://chem.nlm.nih.gov/api/data
+    by_register_number: rn/equals/{cas_number}?data=smiles
+  PubChem:
+    url: https://pubchem.ncbi.nlm.nih.gov/rest/pug
+    by_registry_id: compound/xref/RegistryID/{cas_number}/property/CanonicalSMILES/JSON
+    by_rn: compound/xref/RN/{cas_number}/property/CanonicalSMILES/JSON
