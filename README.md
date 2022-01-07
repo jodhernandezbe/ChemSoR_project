@@ -2,7 +2,11 @@
 
 ## 1. Overview
 
-This a personal practical project which is under development. Its results would be published in a blogpost and not in a peer-review journal paper. Below you can see the current project tree.
+This a personal practical project which is under development. Its results would be published in a blogpost and not in a peer-review journal paper.
+
+### 1.1. Project tree
+
+Below you can see the current project tree.
 
 ```
 ├───data
@@ -46,7 +50,7 @@ This a personal practical project which is under development. Its results would 
 In order to install the Python packages needed to run the tasks contained in the project, you must execute the following command in the Anaconda prompt.
 
 ```
-conda create --name ChemSoR --file environment.yml
+conda env create -n ChemSoR -f environment.yml
 ```
 
 ## 3. Extract, Transform, and Load (ETL) pipeline (data engineering)
