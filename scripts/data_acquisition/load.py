@@ -12,7 +12,7 @@ class TRILoader:
 
     def  __init__(self):
 
-        self._engine, self._session = creating_session_engine()
+        self._engine, self._session = creating_session_engine(check_same_thread=False)
         self._transformed_data_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                         os.pardir,
                                         os.pardir,
