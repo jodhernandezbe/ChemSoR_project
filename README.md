@@ -1,4 +1,4 @@
-# Chemical Sourcer Reduction (ChemSoR) Project
+# Chemical Source Reduction (ChemSoR) Project
 
 <hr/>
 
