@@ -23,7 +23,8 @@ Below you can see the current project tree.
 ├───notebooks
 │   ├───1-jodhernandezbe-EDA.ipynb
 |   ├───2-jodhernandezbe-data-enrichment.ipynb
-|   └───3-jodhernandezbe-modeling.ipynb
+|   ├───3-jodhernandezbe-modeling-without-prices-and-gdpbyindustry.ipynb
+|   └───4-jodhernandezbe-modeling-with-prices-and-gdpbyindustry.ipynb
 |
 └───scripts
     ├───data_acquisition
@@ -39,6 +40,7 @@ Below you can see the current project tree.
     |   |───model.py
     |   |───common.py
     |   |───config.yaml
+    |   |───chem_prices.csv
     |   |───database_schema.yaml
     |   |───TRI_File_2a_columns.txt
     |   └───columns_to_use.csv
